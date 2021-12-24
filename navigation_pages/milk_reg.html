@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Registeration</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="/menu.css">
+    <link rel="stylesheet" type="text/css" href="/navigation_pages/milk_reg.css">
+</head>
+
+<body>
+    <p>Milk Registeration Page</p>
+
+    <!-- Date feild -->
+    <label for="Date">Date:</label>
+    <input type="date" id="MilkRegdate" name="Date"><br>
+
+
+    <!-- Shift Radio Button -->
+    <p>Shift: </p>
+    <input type="radio" id="MilkRegShiftM" name="Shift" value="Morning">
+    <label for="Morning">Morning</label><br>
+    <input type="radio" id="MilkRegShiftE" name="Shift" value="Evening">
+    <label for="Evening">Evening</label><br><br>
+
+    <!-- Cow Tag No -->
+    <label for="cow">Tag Number: </label>
+    <select name="cow" id="MilkRegCow">
+  <option value="cow1">Cow 1</option>
+  <option value="cow2">Cow 2</option>
+  <option value="cow3">Cow 3</option>
+</select><br><br>
+
+    <!-- Quantity -->
+    <label for="quantity">Quantity: </label>
+    <input type="text" id="MilkRegquantity" name="quantity"><br><br>
+
+    <!-- Fat Percentage -->
+    <label for="fat">Fat(%): </label>
+    <input type="text" id="MilkRegFat" name="fat"><br><br>
+
+    <!-- SNF Percentage -->
+    <label for="snf">SNF(%): </label>
+    <input type="text" id="MilkRegsnf" name="snf"><br><br>
+
+    <!-- Add Button -->
+    <button type="button" onclick="MilkRegFunction()">Add</button><br><br>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Tag No</th>
+            <th>Quantity</th>
+            <th>Fat (%)</th>
+            <th>SNF (%)</th>
+        </tr>
+        <tr>
+            <td>Cow 1</td>
+            <td>15</td>
+            <td>69</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Cow 2</td>
+            <td>17</td>
+            <td>66</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Cow 3</td>
+            <td>12</td>
+            <td>81</td>
+            <td>11</td>
+        </tr>
+    </table>
+    <!-- Navbar -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+    <body class="preload">
+        <header class="header">
+            <button class="header__button" id="btnNav" type="button">
+      <i class="material-icons">menu</i>
+  </button>
+        </header>
+        <nav id="menu">
+            <div>
+                <nav class="nav">
+                    <div class="nav__links">
+                        <a href="/index.html" class="nav__link">
+                            <i class="material-icons">home</i> Home Page
+                        </a>
+                        <a href="/navigation_pages/milk_reg.html" class="nav__link">
+                            <i class="material-icons">border_color</i> Milk Data Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/milk_report.html">
+                            <i class="material-icons">poll</i> Milk Report
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/insemination.html">
+                            <i class="material-icons">chalet</i> Insemination Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/calving.html">
+                            <i class="material-icons">pets</i> Calving Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/breed_report.html">
+                            <i class="material-icons">transgender</i> Breeding Report
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/treatment.html">
+                            <i class="material-icons">health_and_safety</i> Treatment Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/Vaccination.html">
+                            <i class="material-icons">sports_cricket</i> Vaccination Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/deworming.html">
+                            <i class="material-icons">trip_origin</i> Deworming Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/reminder_alarm.html">
+                            <i class="material-icons">notifications_active</i> Reminder Alarm
+                        </a>
+                        <a class="nav__link" href="#">
+                            <i class="material-icons">logout</i> Logout
+                        </a>
+                    </div>
+                    <div class="nav__overlay"></div>
+                </nav>
+
+                <script src="/script.js"></script>
+                <script src="/navigation_pages/nav_page_script.js"></script>
+
+</html>
+</body>
+
+</html>

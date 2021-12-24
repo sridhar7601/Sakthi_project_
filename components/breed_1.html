@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breed 1</title>
+    <link rel="stylesheet" type="text/css" href="/menu.css">
+    <link rel="stylesheet" type="text/css" href="/components/breed_1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/script.js"></script>
+</head>
+
+<body class="preload">
+  <!-- Navbar -->
+     <header class="header">
+            <button class="header__button" id="btnNav" type="button">
+      <i class="material-icons">menu</i>
+  </button>
+        </header>
+        <nav id="menu">
+            <div>
+                <nav class="nav">
+                    <div class="nav__links">
+                        <a href="/index.html" class="nav__link">
+                            <i class="material-icons">home</i> Home Page
+                        </a>
+                        <a href="/navigation_pages/milk_reg.html" class="nav__link">
+                            <i class="material-icons">border_color</i> Milk Data Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/milk_report.html">
+                            <i class="material-icons">poll</i> Milk Report
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/insemination.html">
+                            <i class="material-icons">chalet</i> Insemination Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/calving.html">
+                            <i class="material-icons">pets</i> Calving Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/breed_report.html">
+                            <i class="material-icons">transgender</i> Breeding Report
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/treatment.html">
+                            <i class="material-icons">health_and_safety</i> Treatment Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/Vaccination.html">
+                            <i class="material-icons">sports_cricket</i> Vaccination Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/deworming.html">
+                            <i class="material-icons">trip_origin</i> Deworming Entry
+                        </a>
+                        <a class="nav__link" href="/navigation_pages/reminder_alarm.html">
+                            <i class="material-icons">notifications_active</i> Reminder Alarm
+                        </a>
+                        <a class="nav__link" href="#">
+                            <i class="material-icons">logout</i> Logout
+                        </a>
+                    </div>
+                    <div class="nav__overlay"></div>
+                </nav>
+                <button type="button" class='button'onclick="cardDisplay()">butt</button>
+    <!-- <div class="bodyofcard">
+        <div class="card1">
+            <p>cart 1</p>
+         </div>
+         <div class="card1">
+            <p>cart 2</p>
+         </div>
+         <div class="card1">
+            <p>cart 3</p>
+         </div>
+         <div class="card1">
+            <p>cart 14</p>
+         </div>
+         <div class="card1">
+            <p>cart 5</p>
+         </div>
+         <div class="card1">
+            <p>cart 6</p>
+         </div>
+        
+    </div> -->
+</body>
+<script>
+    function cardDisplay(){
+    var data = [['card1'],['card1'],['card77'],['card1'],['card1'],['card1'],['card1'],['card1']]
+    const root = document.createElement('div')
+    root.className = "bodyofcard";
+    const card1 = document.createElement('div')
+    card1.className = "card1";
+    root.appendChild(card1);
+    card1.innerHTML = '<p>dd</p>'
+    document.body.appendChild(root)
+    }
+</script>
+
+</html>
