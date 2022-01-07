@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/gettingInputForm/gettingInputPage.css">
+    <title>Cow Details</title>
+    <link rel="stylesheet" type="text/css" href="/navigation_pages/milk_reg.css">
+    <link rel="stylesheet" type="text/css" href="/components/breed_1.css">
 </head>
+
 <body>
-    
-<div class="container">
-    <form>
-      <div class="row">
-        <h4>Account</h4>
-        <div class="input-group input-group-icon">
-          <input type="text" placeholder="Full Name"/>
-          <div class="input-icon"><i class="fa fa-user"></i></div>
-        </div>
-        <div class="input-group input-group-icon">
-          <input type="email" placeholder="Email Adress"/>
-          <div class="input-icon"><i class="fa fa-envelope"></i></div>
-        </div>
-        <div class="input-group input-group-icon">
-          <input type="password" placeholder="Password"/>
-          <div class="input-icon"><i class="fa fa-key"></i></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-half">
-          <h4>Date of Birth</h4>
-          <div class="input-group">
-            <div class="col-third">
-              <input type="text" placeholder="DD"/>
-            </div>
-            <div class="col-third">
-              <input type="text" placeholder="MM"/>
-            </div>
-            <div class="col-third">
-              <input type="text" placeholder="YYYY"/>
-            </div>
-          </div>
-        </div>
-        <div class="col-half">
-          <h4>Gender</h4>
-          <div class="input-group">
-            <input id="gender-male" type="radio" name="gender" value="male"/>
-            <label for="gender-male">Male</label>
-            <input id="gender-female" type="radio" name="gender" value="female"/>
-            <label for="gender-female">Female</label>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <h4>Payment Details</h4>
-        <div class="input-group">
-          <input id="payment-method-card" type="radio" name="payment-method" value="card" checked="true"/>
-          <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-          <input id="payment-method-paypal" type="radio" name="payment-method" value="paypal"/>
-          <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
-        </div>
-        <div class="input-group input-group-icon">
-          <input type="text" placeholder="Card Number"/>
-          <div class="input-icon"><i class="fa fa-credit-card"></i></div>
-        </div>
-        <div class="col-half">
-          <div class="input-group input-group-icon">
-            <input type="text" placeholder="Card CVC"/>
-            <div class="input-icon"><i class="fa fa-user"></i></div>
-          </div>
-        </div>
-        <div class="col-half">
-          <div class="input-group">
-            <select>
-              <option>01 Jan</option>
-              <option>02 Jan</option>
-            </select>
-            <select>
-              <option>2015</option>
-              <option>2016</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <h4>Terms and Conditions</h4>
-        <div class="input-group">
-          <input id="terms" type="checkbox"/>
-          <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
-        </div>
-      </div>
-    </form>
-  </div>
-</body>
+    <p>Cow Details Page</p>
+
+    <!-- Cow Tag No -->
+    <label for="fname"> Cow Tag Number:</label>
+    <input type="text" id="tagnum" name="fname"><br><br>
+
+    <!-- Cow Name -->
+    <label for="fname"> Cow Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Cow Breed -->
+    <label for="cow">Breed: </label>
+    <select name="cow" id="Insemcow">
+               <option value="cow1">Breed 1</option>
+               <option value="cow2">Breed 2</option>
+               <option value="cow3">Breed 3</option>
+             </select><br>
+
+    <!-- Sex Radio Button -->
+    <p>Sex: </p>
+    <input type="radio" id="InsemActionB" name="Shift" value="Bred">
+    <label for="Morning">Male</label><br>
+    <input type="radio" id="InsemActionS" name="Shift" value="Skipped">
+    <label for="Evening">Female</label><br><br>
+
+    <!-- Sire Name -->
+    <label for="fname"> Sire Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Dam Name -->
+    <label for="fname"> Dame Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Number of Lactation -->
+    <label for="fname"> Number of Lactation:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Milking Status -->
+    <p>Milking Status: </p>
+    <input type="radio" id="InsemActionB" name="Shift" value="Bred">
+    <label for="Morning">Dry</label><br>
+    <input type="radio" id="InsemActionS" name="Shift" value="Skipped">
+    <label for="Evening">Milking</label><br><br>
+
+    <!-- Last Breeding -->
+    <label for="Date">Last Brreding:</label>
+    <input type="date" id="Insemdate" name="Date"><br><br>
+
+    <!-- LAst Calving -->
+    <label for="Date">Last Calving:</label>
+    <input type="date" id="Insemdate" name="Date">
+    <!-- Calf gender Radio Button -->
+    <p>Calf Gender: </p>
+    <input type="radio" id="InsemActionB" name="gen" value="Bred">
+    <label for="Morning">Male</label><br>
+    <input type="radio" id="InsemActionS" name="gen" value="Skipped">
+    <label for="Evening">Female</label><br><br>
+
+    <!-- Concentrate -->
+    <label for="fname"> Concentrate:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Quantity -->
+    <label for="fname"> Quantity:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- Save Button -->
+    <button type="button" onclick="functiontocreate()">Save</button><br><br>
+
+
+    <script src="/components/Breed_1_And_Input.js"></script>
+
 </html>
